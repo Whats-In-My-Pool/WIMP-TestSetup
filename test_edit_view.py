@@ -170,7 +170,7 @@ class TestEditView(tk.Frame):
 
     def strip_changed_callback(self, *args):
         id = self.controller.strip_id.get()
-
+        self.test_id_entry.delete(0, 'end')
         self.test_id_entry.insert(0, id)
 
 
